@@ -1,5 +1,5 @@
 Este repositorio reúne materiales de estudio, prácticas y recursos relacionados con el Aseguramiento de la Calidad de Software
-## 📂 Estructura del repositorio
+## Curso QA
 
 ```text
 📁 cursos-qa
