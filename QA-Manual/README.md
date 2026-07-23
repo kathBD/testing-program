@@ -1,4 +1,4 @@
-¡Bienvenido al **Curso de QA Manual**! 🚀 Aquí aprenderás todo lo que necesitas saber para convertirte en un experto en asegurar la calidad del software, desde los fundamentos básicos hasta técnicas avanzadas y herramientas profesionales. 📋✨
+**Curso de QA Manual**! 🚀 Aquí aprenderás todo lo que necesitas saber para convertirte en un experto en asegurar la calidad del software, desde los fundamentos básicos hasta técnicas avanzadas y herramientas profesionales. 📋✨
 
 Este curso está diseñado para guiarte paso a paso a través de cada aspecto del testing manual, asegurando que comprendas tanto los conceptos teóricos como su aplicación práctica.
 
