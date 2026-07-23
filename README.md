@@ -4,7 +4,8 @@ Este repositorio reúne materiales de estudio, prácticas y recursos relacionado
 ```text
 📁 cursos-qa
 │
-├── 📁 Fundamentos_QA/
+├── 📁 Fundamentos_QA_Manual/
+├── 📁 Automatización de test con Playwright
 ├── 📁 Casos_de_Prueba/
 ├── 📁 Jira/
 ├── 📁 SQL_para_QA/
