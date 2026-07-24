@@ -135,6 +135,7 @@ Después de ejecutar tus pruebas, utiliza el siguiente comando para abrir el rep
 ```bash
 npx playwright show-report
 ```
+<img width="1544" height="460" alt="image" src="https://github.com/user-attachments/assets/50439c43-3cd7-428c-bc08-4e81d5d1b823" />
 
 > **Nota:** Si el reporte aún no existe, primero ejecuta tus pruebas con:
 
