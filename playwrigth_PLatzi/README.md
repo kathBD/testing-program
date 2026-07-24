@@ -80,7 +80,7 @@ npx playwright test
 Playwright permite adaptar la ejecución de pruebas mediante diferentes configuraciones:
 
 - Ejecutar pruebas en distintos navegadores.
-- Usar modo visible (`headed`) para observar la ejecución.
+- Usar modo visible (`headed`) para observar la ejecución (muestra el test ejecutandose paso a paso simlacion)
 - Ejecutar pruebas en paralelo.
 - Generar reportes de resultados.
 - Depurar pruebas paso a paso.
