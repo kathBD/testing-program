@@ -105,6 +105,7 @@ npx playwright test --headed
 4. Guardar archivo .spec.ts
    ↓
 5. Ejecutar prueba desde la terminal
+
 ```
 
 Con Playwright puedes pasar de simplemente crear pruebas a explorar, depurar y validar aplicaciones web desde diferentes escenarios.
@@ -113,3 +114,40 @@ Con Playwright puedes pasar de simplemente crear pruebas a explorar, depurar y v
 npx playwright test uittesting
 
  '''
+
+ ---
+
+## Visualizar el reporte de ejecución
+
+Una vez que ejecutas tus pruebas, Playwright genera un **reporte HTML** que te permite examinar en detalle la ejecución de cada test.
+
+Con este reporte puedes:
+
+- Ver qué pruebas pasaron o fallaron.
+- Revisar capturas de pantalla y videos (si están habilitados).
+- Analizar el **trace** para depurar errores paso a paso.
+- Consultar la duración de cada prueba y los mensajes de error.
+
+### Generar y visualizar el reporte
+
+Después de ejecutar tus pruebas, utiliza el siguiente comando para abrir el reporte en tu navegador:
+
+```bash
+npx playwright show-report
+```
+
+> **Nota:** Si el reporte aún no existe, primero ejecuta tus pruebas con:
+
+```bash
+npx playwright test
+```
+
+Al finalizar la ejecución, Playwright generará automáticamente el reporte HTML en la carpeta `playwright-report/`, desde donde podrás inspeccionar todos los resultados de forma visual.
+
+## Anatomía de los Test
+
+El patrón más común para generar una prueba es mediante 3A (Arrange Act Asset). El cual explica la forma de organizar y estructurar las pruebas para que fuesen claras y entendibles, separando cada prueba según el enfoque se pretende dar. .
+
+- Organización (Arrange). Inicializa los objetos, estableciendo sus estados o valores iniciales.
+- Acto (Act). La invocación de la prueba según sea el escenario estipulado.
+- Afirmación (Asset). Se verifica la acción, según sea lo esperado por la prueba
