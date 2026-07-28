@@ -196,7 +196,7 @@ Un assertion es la línea que convierte un script de automatización en una prue
 ¿Qué hace expect en Playwright? Recibe un locator y verifica una condición sobre ese elemento, como visibilidad, texto o estado. Si la condición falla, el test falla.
 
 ## ejemplos: 
-'''
+```
 toBeVisible() //Verifica que un elemento sea visible.
 await expect(page.locator('#username')).toBeVisible();
 
@@ -219,4 +219,4 @@ toBeDisabled() //Comprueba que el botón esté deshabilitado.
 
 toHaveAttribute() //Verifica un atributo HTML.
 
-'''
+```
