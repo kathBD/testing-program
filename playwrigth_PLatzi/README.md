@@ -150,4 +150,75 @@ El patrón más común para generar una prueba es mediante 3A (Arrange Act Asset
 
 - Organización (Arrange). Inicializa los objetos, estableciendo sus estados o valores iniciales.
 - Acto (Act). La invocación de la prueba según sea el escenario estipulado.
-- Afirmación (Asset). Se verifica la acción, según sea lo esperado por la prueba
+- Afirmación (Asset). Se verifica la acción, según sea lo esperado por la prueba.
+
+## Los selectores 
+
+son cadenas de texto usadas para create localizadores (Locators), los cuales describen la forma para encontrar un elementos en una página.
+
+. En Playwright, los localizadores son funciones construidas que permiten seleccionar un elemento dentro una estructura compleja de un documento web. Por ejemplo:
+
+'''
+
+page.getByRole() , para localizar de manera explícita o implícita atributos de un elemento
+page.getByText() , para localizar por texto a un elemento
+
+'''
+
+## Método locator
+
+📌 Referencia El método page.locator() es una implementación legacy de Playwright que puede ser usado para implementar y accionar selectores. locator | Playwright
+
+
+
+✨ Concepto clave El localizador se resuelve en el elemento inmediatamente antes de realizar una acción, por lo que una serie de acciones en el mismo localizador se pueden realizar en diferentes elementos del DOM.
+
+## Locators modernos
+
+Para Playwright, los locators son la parte centrar en la representación, obtención y ejecución de cualquier elemento de una página web. . De la mano de la documentación, es posible categorizar a los localizadores en:
+
+
+Obtención de elementos
+Filtro de elementos
+Agrupación de elementos
+
+
+✨ Concepto clave La diferencia entre una obtención y un filtrado, es la consideración donde se pivoteará la selección (absoluta o relativa).
+
+Las pruebas automatizadas pierden valor si no verifican comportamiento. assertions en Playwright usando expect, la pieza clave para confirmar que tu aplicación responde como esperas, ideal para QA automatizadores que arrancan con testing E2E.
+
+Un assertion es una afirmación dentro de tu test: le pides a Playwright que confirme que cierto resultado ocurrió. Sin esa verificación, tu script solo ejecuta acciones, pero nunca te dice si la app falló o pasó.
+
+## ¿Qué es un assertion en Playwright y por qué importa?
+
+Un assertion es la línea que convierte un script de automatización en una prueba real. Sin ella, tu test puede llenar formularios, hacer clics y navegar, pero no sabrá si el resultado fue correcto.
+
+¿Qué hace expect en Playwright? Recibe un locator y verifica una condición sobre ese elemento, como visibilidad, texto o estado. Si la condición falla, el test falla.
+
+## ejemplos: 
+'''
+toBeVisible() //Verifica que un elemento sea visible.
+await expect(page.locator('#username')).toBeVisible();
+
+toBeHidden()  // Verifica que un elemento esté oculto.
+await expect(page.locator('#loading')).toBeHidden();
+
+toHaveText() // Comprueba el texto exacto.
+await expect(page.locator('h1')).toHaveText('Bienvenido');
+toContainText() //Comprueba que el texto contenga una cadena.
+
+toHaveValue() // Se usa para validar el valor de un <input>.
+await page.locator('#name').fill('Tsuki');
+
+await expect(page.locator('#name')).toHaveValue('Tsuki');
+toBeChecked() // Para checkboxes o radio buttons.
+
+toBeEnabled() // Comprueba que el botón pueda usarse.
+
+toBeDisabled() //Comprueba que el botón esté deshabilitado.
+
+toHaveAttribute() //Verifica un atributo HTML.
+await expect(page.locator('#email'))
+    .toHaveAttribute('type', 'email');
+
+'''
