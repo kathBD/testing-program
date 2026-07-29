@@ -220,3 +220,15 @@ toBeDisabled() //Comprueba que el botón esté deshabilitado.
 toHaveAttribute() //Verifica un atributo HTML.
 
 ```
+
+## Playwright Inspector
+Para empezar a utilizar Playwright Inspector, debes abrirlo con un comando específico en tu terminal. Sigue este paso a paso sencillo:
+
+Abre la terminal de tu entorno de desarrollo, como Visual Studio Code.
+Escribe el siguiente comando para iniciar Playwright Inspector junto con el test
+
+```
+
+npx playwright test -debug
+
+```
